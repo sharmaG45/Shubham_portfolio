@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d74ad6ff5f.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2>
+            <a href=""><span id="sp">S</span>hubham.</a>
+          </h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>          
+        </nav>
+        <hr />
+        <div class="header-text">
+          <h1>Hiiii,I'm<br /><span>Shubham </span>Kumar</h1>  
+          <p>and I am a Passionate Web Developer.</p>
+          <span id="element"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/pic4.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-titles">About Me</h1>
+            <p>
+              Hiii! I'm <b>Shubham Kumar</b>, a recent graduate with a degree in Master of Computer Application from Cochin University of Science And Technology. I have a strong foundation in Core java,python and problem Solving, which I honed through coursework and hands-on projects like e-Commerce website and ATM Simulator System.
+              I'm enthusiastic about the opportunity to grow professionally, and I'm confident in my ability to make meaningful contributions. Let's connect and explore how my skills can contribute to your team!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('project')">Project</p>
+            </div>
+            <div class="tab-contents active-tabs" id="education">
+              <ul>
+                <li>
+                  <span>2022-2024</span> <br />
+                  MCA from CUSAT(Kerala).
+                </li>
+                <li><span>2018-2021</span><br />BCA from BRABU(Bihar).</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>Core Java</li>
+                <li>Pyhton</li>
+                <li>HTML,CSS and javaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Web Devlopment</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="project">
+              <ul>
+                <li>
+                  <span>e-Commerce Website</span> <br />
+                  <b>Technologies:</b>HTML,CSS,javaScript,PHP and MySQL.
+                </li>
+                <li>
+                  <span>Bank Management System</span><br /><b>Technologies:</b
+                  >Core java,JDBC,MySQL.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-titles">My Skills</h1>
+        <div class="skills-list">
+          <div>
+            <h2>Programming Language</h2>
+            <ul>
+              <li><i class="fa-brands fa-java"> </i> Java</li>
+              <li><i class="fa-brands fa-python"> </i> Python</li>
+              <li><i class="fa-brands fa-js"> </i> javaScript</li>
+            </ul>
+
+            <a href="#">More</a>
+          </div>
+          <div>
+            <h2>Course Work</h2>
+            <ul class="course">
+              <li>Oops</li>
+              <li>MySQL</li>
+              <li>DSA</li>
+            </ul>
+            <a href="#">More</a>
+          </div>
+          <div>
+            <!-- <i class="fa-sharp fa-solid fa-code"></i> -->
+            <h2>Web Development</h2>
+            <ul>
+              <li><i class="fa-brands fa-html5"> </i>HTML</li>
+              <p>Intermediate</p>
+              <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+              <li><i class="fa-brands fa-php"> </i>php</li>
+            </ul>
+            <a href="#">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-titles">My Project</h1>
+        <div class="project-list">
+          <div class="work">
+            <img src="img/eCommerce.png" alt="" />
+            <div class="layer">
+              <h3>e-Commerce Webpage</h3>
+              <p>
+                An e-Commerce web application is designed to facilitate online buying products and services.
+              </p>
+              <p>Features are User Registration, Log In, Log Out, Change password, Product Catalog, Shopping Cart, Wishlist,
+                Responsive Design.</p>
+                <a href="https://github.com/sharmaG45/e-Commerce"><i class="fa-brands fa-square-github"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="img/bank.png" alt="" />
+              <div class="layer">
+                <h3>ATM Simulator System</h3>
+                <p>
+                  An ATM (Automated Teller Machine) simulator systems is designed to replicate the functions and processes
+                  of a real ATM allowing users to practice using an ATM interface and performing various transaction without
+                  involving real money.
+                </p>
+                <p>Features are User Identification using PIN, Transaction Option, Receipt Generation, Transaction Limit etc.</p>
+                <a href="https://github.com/sharmaG45/ATM-Simulator-System"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn1">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-titles">Contact Me</h1>
+        <div class="row">
+          <div class="contact-middle">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#">shubhamhzp2000@gmail.com</a>
+            <p><i class="fa-solid fa-square-phone"></i> +91-9097989707</p>
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/in/shubham-kumar-8743731b3/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/shubhamsharma.shubhamsharms.1/"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <a href="img/ShubhamCV.pdf" download class="btn1 btn2"
+              >Download Cv</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright & All Right Reserved Shubham Kumar</p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tabLinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabContents) {
+          tabcontent.classList.remove("active-tabs");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById("tabname").classList.add("active-tabs");
+      }
+
+      //   Animation
+      // var typed = new typed("#element", {
+      //   strings: ["Front-end Developer", "Web Designer", "Coder"],
+      //   typeSpeed: 50,
+      // });
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+        document.querySelector(".fas.fa-bars").style.display = "block";
+        document.querySelector(".fas.fa-times").style.display = "none";
+      }
+      function openmenu() {
+        sidemenu.style.right = "0";
+        document.querySelector(".fas.fa-bars").style.display = "none";
+        document.querySelector(".fas.fa-times").style.display = "block";
+      }
+    </script>
+
+    <!-- footer -->
+  </body>
+</html>
